@@ -28,6 +28,7 @@ body {
 	width: 600px;
 	height: 425px;
 	border-radius: 15px;
+	flex-direction: row;
 
 }
 
@@ -76,9 +77,29 @@ button {
 	border-radius: 15px;
 	border: none;
 	color: white;
+	cursor: pointer;
+}
+button:hover {
+	background-color: #67b89a;
 }
 
 .attribution {
 	margin: 15px;
 	font-family: 'Montserrat', sans-serif;
+}
+@media(max-width: 768px){
+	.perfume-card {
+		flex-direction: column;
+		width: 300px;
+		height: 725px;
+	}
+
+	.imagen-perfume {
+		width: 300px;
+		height: 300px;
+		border-top-left-radius: 15px;
+		border-top-right-radius: 15px;
+		border-bottom-left-radius: 0;
+	}
+
 }
